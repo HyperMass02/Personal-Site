@@ -67,6 +67,12 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
+
+img{
+  height: 200px;
+  width: 200px;
+  padding: 13px;
+}
 .colors {
   width: 100%;
   min-width: 350px;
