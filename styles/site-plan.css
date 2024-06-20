@@ -163,6 +163,11 @@ nav a:hover {
   line-height: 3em;
 }
 
+.imgsize{
+  height: 300px;
+  width: 175px;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
