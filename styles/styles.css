@@ -1,5 +1,120 @@
-/* body{
-    text-align: center;
+body{
     margin: 0;
     padding: 0;
-} */
+}
+
+header nav{
+    display: grid;
+    border: 2px solid white;
+    border-radius: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #00bf63;
+}
+header nav {
+    padding: 20px 50px;
+    font-size: 30px;
+}
+header nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+}
+.od{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    text-align: center;
+
+}
+.faq{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    text-align: center;
+}
+
+.faq:hover, .od:hover{
+    background-color: #059862;
+    color: white;
+}
+.logo img{
+    height: 100px;
+    width: 100px; 
+    border-radius: 50%;
+    border: 1px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}  
+
+main{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 75px 1fr 75px 1fr;
+    background-color: #F5FEF6;
+}
+.welcome{
+    z-index: 3;
+    grid-column: 2/3;
+    background-image: linear-gradient(to right,#0097b2, #7ed957);
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 5px;
+}
+.common{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    font-size: 30px;
+    background-color: #EDEDED;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 15px;
+
+}
+
+main img{
+    z-index: 1;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 5px;
+    height: 500px;
+    width: 100%; 
+    grid-column: 2/3;
+}
+
+main h2{
+    z-index: 3; 
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 5px;
+    text-align: center;
+    background-color: #7ed957;
+    grid-column: 2/3;
+}
+
+
+footer{
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: #00bf63;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+footer p{
+    padding-left: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+footer a{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
