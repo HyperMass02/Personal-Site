@@ -19,7 +19,7 @@ header nav {
 }
 header nav a {
     text-decoration: none;
-    color: #fcfbfb;
+    color: black;
     margin: 0 auto;
     border-radius: 12px;
     padding: 5px;
@@ -131,11 +131,6 @@ main h2{
 .hen2{
     grid-row: 4/5;
 }
-.whitespace{
-    padding-bottom: 50px;
-    grid-column: 2/3;
-    grid-row: 6/7;
-}
 
 #review{
     display: grid;
@@ -165,8 +160,63 @@ main h2{
     grid-row: 4/5;
 }
 
+.layout {
+    width: 600px;
+    margin: auto;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+ 
+.accordion {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(105, 206, 105);
+    border-radius: 10px;
+    grid-column: 2/3;
+}
+ 
+.accordion__question p {
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+ 
+.accordion__answer p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black; 
+    border-radius: 10px;
+}
+.accordion__answer img, .accordion__question img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accordion:hover {
+    cursor: pointer;
+}
+ 
+.accordion__answer {
+    display: none;
+}
+ 
+.accordion.active .accordion__answer {
+    display: block;
+}
+
+
 
 footer{
+    margin-top: 50px;
     border: 2px solid white;
     border-radius: 12px;
     padding: 5px;
@@ -196,7 +246,7 @@ footer a{
     align-self: center;
     text-align: center;
     text-decoration: none;
-    color: #fcfbfb;
+    color: black;
     margin: 0 auto;
     border-radius: 12px;
     padding: 5px;
